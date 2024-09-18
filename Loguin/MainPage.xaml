@@ -33,20 +33,11 @@
                     VerticalOptions="Center"
                     ColumnDefinitions="Auto, *">
                     <Image
-                        Grid.Column="0"
-                        Margin="10,0,0,0"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Center"
-                        HeightRequest="15"
-                        Source="email"
-                        WidthRequest="20" />
+                        Style="{StaticResource ImageStyle}"
+                        Source="email" />
                     <Entry
-                        Grid.Column="1"
-                        TextColor="White"
-                        VerticalOptions="Center"
-                        BackgroundColor="Transparent"
-                        Placeholder="Ingrese su correo"
-                        PlaceholderColor="Gray" />
+                        Style="{StaticResource EntryStyle}"
+                        Placeholder="Ingrese su correo" />
                 </Grid>
             </Border>
             <Border
@@ -55,21 +46,12 @@
                     VerticalOptions="Center"
                     ColumnDefinitions="Auto, *">
                     <Image
-                        Grid.Column="0"
-                        Margin="10,0,0,0"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Center"
-                        HeightRequest="15"
-                        Source="password"
-                        WidthRequest="20" />
+                        Style="{StaticResource ImageStyle}"
+                        Source="password" />
                     <Entry
-                        Grid.Column="1"
-                        TextColor="White"
-                        VerticalOptions="Center"
-                        BackgroundColor="Transparent"
+                        Style="{StaticResource EntryStyle}"
                         IsPassword="True"
-                        Placeholder="Ingrese su Contraseña"
-                        PlaceholderColor="Gray" />
+                        Placeholder="Ingrese su Contraseña" />
                 </Grid>
             </Border>
 
@@ -125,6 +107,26 @@
                 <Setter Property="Stroke" Value="{StaticResource PrimaryBackgroundColor}" />
                 <Setter Property="StrokeShape" Value="RoundRectangle 5" />
                 <Setter Property="StrokeThickness" Value="2" />
+            </Style>
+            <Style
+                x:Key="ImageStyle">
+                <Setter Property="Margin" Value="10,0,0,0" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HeightRequest" Value="15" />
+                <Setter Property="WidthRequest" Value="20" />
+                <Setter Property="Grid.Column" Value="0" />
+
+            </Style>
+
+            <Style
+                x:Key="EntryStyle">
+                <Setter Property="Grid.Column" Value="1" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalOption" Value="Center" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
