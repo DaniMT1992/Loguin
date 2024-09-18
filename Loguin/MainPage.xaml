@@ -128,6 +128,15 @@
                 <Setter Property="PlaceholderColor" Value="Gray" />
 
             </Style>
+            <Style
+                x:Key="EntryStyleere">
+                <Setter Property="Grid.Column" Value="1" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalOption" Value="Center" />
+                <Setter Property="BackgroundColor" Value="Pink" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 </ContentPage>
