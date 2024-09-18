@@ -22,7 +22,8 @@
             <Image
                 Source="logo" />
         </StackLayout>
-        <!--  Body  -->
+        <!--#endregion-->
+        <!--#region Body-->
         <StackLayout
             Grid.Row="1"
             VerticalOptions="Center"
@@ -54,7 +55,6 @@
                         Placeholder="Ingrese su Contraseña" />
                 </Grid>
             </Border>
-
             <Button
                 Text="Iniciar sesión"
                 BackgroundColor="#72B8DA">
@@ -81,7 +81,8 @@
                 </Button.Triggers>
             </Button>
         </StackLayout>
-
+        <!--#endregion-->
+        <!--#region Footer-->
         <Label
             Grid.Row="2"
             Text="Olvidé mi Contraseña"
@@ -94,11 +95,7 @@
                     Tapped="TapGestureRecognizer_Tapped" />
             </Label.GestureRecognizers>
         </Label>
-        <!--#region Head-->
-        <!--#endregion-->
     </Grid>
-
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style
@@ -116,9 +113,7 @@
                 <Setter Property="HeightRequest" Value="15" />
                 <Setter Property="WidthRequest" Value="20" />
                 <Setter Property="Grid.Column" Value="0" />
-
             </Style>
-
             <Style
                 x:Key="EntryStyle">
                 <Setter Property="Grid.Column" Value="1" />
@@ -126,7 +121,6 @@
                 <Setter Property="VerticalOption" Value="Center" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="PlaceholderColor" Value="Gray" />
-
             </Style>
             <Style
                 x:Key="EntryStyleere">
@@ -135,7 +129,6 @@
                 <Setter Property="VerticalOption" Value="Center" />
                 <Setter Property="BackgroundColor" Value="Pink" />
                 <Setter Property="PlaceholderColor" Value="Gray" />
-
             </Style>
             <Style
                 x:Key="ImageStyle">
@@ -145,27 +138,9 @@
                 <Setter Property="HeightRequest" Value="15" />
                 <Setter Property="WidthRequest" Value="20" />
                 <Setter Property="Grid.Column" Value="0" />
-
             </Style>
+            <!--#endregion-->
 
-            <Style
-                x:Key="EntryStyle">
-                <Setter Property="Grid.Column" Value="1" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="VerticalOption" Value="Center" />
-                <Setter Property="BackgroundColor" Value="Transparent" />
-                <Setter Property="PlaceholderColor" Value="Gray" />
-
-            </Style>
-            <Style
-                x:Key="EntryStyleere">
-                <Setter Property="Grid.Column" Value="1" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="VerticalOption" Value="Center" />
-                <Setter Property="BackgroundColor" Value="Pink" />
-                <Setter Property="PlaceholderColor" Value="Gray" />
-
-            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 </ContentPage>
