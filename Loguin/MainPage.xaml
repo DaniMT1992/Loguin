@@ -137,6 +137,35 @@
                 <Setter Property="PlaceholderColor" Value="Gray" />
 
             </Style>
+            <Style
+                x:Key="ImageStyle">
+                <Setter Property="Margin" Value="10,0,0,0" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HeightRequest" Value="15" />
+                <Setter Property="WidthRequest" Value="20" />
+                <Setter Property="Grid.Column" Value="0" />
+
+            </Style>
+
+            <Style
+                x:Key="EntryStyle">
+                <Setter Property="Grid.Column" Value="1" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalOption" Value="Center" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+
+            </Style>
+            <Style
+                x:Key="EntryStyleere">
+                <Setter Property="Grid.Column" Value="1" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalOption" Value="Center" />
+                <Setter Property="BackgroundColor" Value="Pink" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 </ContentPage>
