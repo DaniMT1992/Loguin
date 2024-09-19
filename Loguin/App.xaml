@@ -7,16 +7,11 @@
 
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="BackgroundColor">#33333F</Color>
-            <Color x:Key="PrimaryBackgroundColor">#72B8DA</Color>
-            <Color x:Key="LightFontColor">#FFFFFF</Color>
-
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary
                     Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary
                     Source="Resources/Styles/Styles.xaml" />
-
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
