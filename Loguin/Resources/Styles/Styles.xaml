@@ -6,6 +6,25 @@
 
 
     <Style
+        x:Key="LabelStyle"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    <Style
+        x:Key="HorizontalStyle"
+        TargetType="StackLayout">
+        <Setter Property="Orientation" Value="Horizontal" />
+        <Setter Property="Spacing" Value="20" />
+    </Style>
+    <Style
+        x:Key="BoxStyle"
+        TargetType="BoxView">
+        <Setter Property="VerticalOptions" Value="Start" />
+        <Setter Property="HeightRequest" Value="1" />
+        <Setter Property="Color" Value="Black" />
+    </Style>
+    <Style
         x:Key="ImageStyle"
         TargetType="Image">
         <Setter Property="Margin" Value="10,0,0,0" />
@@ -14,9 +33,6 @@
         <Setter Property="HeightRequest" Value="15" />
         <Setter Property="WidthRequest" Value="20" />
     </Style>
-
-
-
     <Style
         x:Key="BorderEntryStyle"
         TargetType="Border">
@@ -24,7 +40,6 @@
         <Setter Property="StrokeShape" Value="RoundRectangle 5" />
         <Setter Property="StrokeThickness" Value="2" />
     </Style>
-
     <Style
         x:Key="EntryStyle"
         TargetType="Entry">
@@ -33,8 +48,6 @@
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="PlaceholderColor" Value="Gray" />
     </Style>
-
-
     <Style
         TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />

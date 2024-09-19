@@ -20,7 +20,7 @@
                 HorizontalOptions="Center"
                 FontSize="25" />
             <Image
-                Source="logo" />
+                Source="logot" />
         </StackLayout>
         <!--#endregion-->
         <!--#region Body-->
@@ -35,8 +35,9 @@
                     ColumnDefinitions="Auto, *">
                     <Image
                         Style="{StaticResource ImageStyle}"
-                        Source="email" />
+                        Source="emails" />
                     <Entry
+                        x:Name="emailEntry"
                         Grid.Column="1"
                         Style="{StaticResource EntryStyle}"
                         Placeholder="Ingrese su correo" />
@@ -49,8 +50,9 @@
                     ColumnDefinitions="Auto, *">
                     <Image
                         Style="{StaticResource ImageStyle}"
-                        Source="password" />
+                        Source="passwords" />
                     <Entry
+                        x:Name="passwordEntry"
                         Grid.Column="1"
                         Style="{StaticResource EntryStyle}"
                         IsPassword="True"
@@ -59,7 +61,8 @@
             </Border>
             <Button
                 Text="Iniciar sesión"
-                BackgroundColor="#72B8DA">
+                BackgroundColor="#72B8DA"
+                Clicked="Loguin_Clicked">
                 <Button.Triggers>
                     <Trigger TargetType="Button" Property="IsPressed" Value="True">
                         <Setter Property="BackgroundColor" Value="Red" />
