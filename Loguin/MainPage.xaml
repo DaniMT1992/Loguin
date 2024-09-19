@@ -37,6 +37,7 @@
                         Style="{StaticResource ImageStyle}"
                         Source="email" />
                     <Entry
+                        Grid.Column="1"
                         Style="{StaticResource EntryStyle}"
                         Placeholder="Ingrese su correo" />
                 </Grid>
@@ -50,6 +51,7 @@
                         Style="{StaticResource ImageStyle}"
                         Source="password" />
                     <Entry
+                        Grid.Column="1"
                         Style="{StaticResource EntryStyle}"
                         IsPassword="True"
                         Placeholder="Ingrese su Contraseña" />
@@ -96,36 +98,5 @@
             </Label.GestureRecognizers>
         </Label>
     </Grid>
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style
-                x:Key="BorderEntryStyle"
-                TargetType="Border">
-                <Setter Property="Stroke" Value="{StaticResource PrimaryBackgroundColor}" />
-                <Setter Property="StrokeShape" Value="RoundRectangle 5" />
-                <Setter Property="StrokeThickness" Value="2" />
-            </Style>
-            <Style
-                x:Key="ImageStyle"
-                TargetType="Image">
-                <Setter Property="Margin" Value="10,0,0,0" />
-                <Setter Property="HorizontalOptions" Value="Start" />
-                <Setter Property="VerticalOptions" Value="Center" />
-                <Setter Property="HeightRequest" Value="15" />
-                <Setter Property="WidthRequest" Value="20" />
-                <Setter Property="Grid.Column" Value="0" />
-            </Style>
-            <Style
-                x:Key="EntryStyle"
-                TargetType="Entry">
-                <Setter Property="Grid.Column" Value="1" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="VerticalOptions" Value="Center" />
-                <Setter Property="BackgroundColor" Value="Transparent" />
-                <Setter Property="PlaceholderColor" Value="Gray" />
-            </Style>
-            <!--#endregion-->
-
-        </ResourceDictionary>
-    </ContentPage.Resources>
+    <ContentPage.Resources />
 </ContentPage>

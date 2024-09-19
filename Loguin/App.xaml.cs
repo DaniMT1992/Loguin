@@ -2,11 +2,20 @@
 {
     public partial class App : Application
     {
+       
         public App()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
 
-            MainPage = new MainPage();
+                MainPage = new MainPage();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
     }
 }
